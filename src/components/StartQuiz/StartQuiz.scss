@@ -1,0 +1,43 @@
+@import '../../styles/vars.scss';
+
+.start-quiz-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem !important;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background: $bg;
+    border-radius: 4px;
+    margin: auto;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+button {
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    border-radius: 9px;
+    font-size: 18px;
+    color: $bg;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:disabled {
+        background: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
+    }
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-btn {
+    text-align: center;
+}
